@@ -1,8 +1,21 @@
 #include"Vector.h"
+#include"Stack.h"
 
 int main()
 {
-	srand(time(0));
+	Stack a;
+	a.Push(10);
+	a.Push(20);
+	a.Push(30);
+
+	cout<<a.Peek();
+	a.Pop(10);
+	cout << a.Peek();
+	cout << a.Peek();
+	a.Pop(10);
+	cout << a.Peek();
+
+	/*srand(time(0));
 	Vector v;
 	Vector a;
 
@@ -29,6 +42,6 @@ int main()
 	a = v;
 	a.Print();
 	cin >> v;
-	cout << v;
+	cout << v;*/
 }
 
