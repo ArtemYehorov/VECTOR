@@ -3,7 +3,7 @@
 
 int main()
 {
-	Stack a;
+	Stack<int> a;
 	a.Push(10);
 	a.Push(20);
 	a.Push(30);

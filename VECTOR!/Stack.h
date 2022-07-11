@@ -1,12 +1,15 @@
 #include"Vector.h"
 #pragma once
+
+template < typename T>
 class Stack
 {
-	Vector data;
+	Vector<int> data;
+
 	bool IsEmpty() const { return data.IsEmpty(); }
 public:
 
-	void Push(int value)
+	void Push(T value)
 	{
 		data.Insert(value , 0);		
 	}
@@ -19,7 +22,7 @@ public:
 			return -1;
 	}
 
-	void Pop(int value)
+	void Pop(T value)
 	{
 		if (!IsEmpty())
 		{
